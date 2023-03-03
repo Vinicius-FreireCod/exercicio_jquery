@@ -18,10 +18,16 @@ $(document).ready(function(){
 
     })
 
-    $("#atividades").click(function() {
-        $('li').toggleClass("feito");
-    })
+    function getEventTarget(e) {
+        e = e || window.event;
+        return e.target || e.srcElement; 
+    }
 
-    
+    var ul = document.getElementById('ativ-cadastrada');
+    ul.onclick = function(event) {
+        var target = getEventTarget(event);
+        $(target).toggleClass("feito");
+    };
+
 
 })
