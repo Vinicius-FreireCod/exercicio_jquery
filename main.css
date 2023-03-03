@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #e7e7e7;
+    padding-top: 250px;
+}
+
+header,form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+#atividades {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.feito {
+    text-decoration: line-through;
+}
+
+h1, form {
+    margin-bottom: 25px;
+}
+
+form input {
+    height: 50px;
+    width: 250px;
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+
